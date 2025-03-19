@@ -77,7 +77,7 @@ pip install numpy matplotlib Pillow scipy scikit-image
    Le script principal effectue d'abord la génération des images traitées, puis le décodage. Pour exécuter l'ensemble du pipeline, lancez :
 
    ```bash
-   python combined_script.py
+   python Barcode_decode.py
    ```
 
    - Les images prétraitées seront sauvegardées dans le dossier `OUTPUT_BARCODE`.
@@ -94,16 +94,6 @@ pip install numpy matplotlib Pillow scipy scikit-image
 ├── README.md              # Ce fichier
 ```
 
-## Développement et Améliorations
-
-- **Fonctions complémentaires :**  
-  Le décodage complet du code-barres EAN 13 nécessite l'implémentation de fonctions supplémentaires (par exemple, `extract_signature`, `otsu_threshold`, etc.). Ces fonctions peuvent être intégrées dans un module séparé (`code1.py`) et importées dans le script principal.
-
-- **Interface Graphique (Bonus) :**  
-  Une interface graphique en Python (par exemple avec Tkinter ou PyQt) pourra être développée pour permettre une supervision complète de la chaîne de traitement.
-
-- **Optimisation :**  
-  Des améliorations en termes de robustesse et de rapidité pourront être apportées en affinant la segmentation, le choix des paramètres et le tirage aléatoire des rayons.
 
 
 ## Licence
